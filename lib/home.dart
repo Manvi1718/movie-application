@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/Widgets/top_rated.dart';
+import 'package:movie_app/Widgets/trending.dart';
+import 'package:movie_app/Widgets/tv.dart';
+import 'package:movie_app/utils/text.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
 class Home extends StatefulWidget {
@@ -41,16 +45,26 @@ class _HomeState extends State<Home> {
       tv = tvResult['results'];
     });
 
-    print(trendingMovies);
+    print(tv);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Movie App'),
-        backgroundColor: Theme.of(context).primaryColor,
+        title: ModifiedText(
+          text: 'Movie App ❤️',
+          color: Colors.white,
+          size: 23,
+        ),
+        backgroundColor: const Color.fromARGB(255, 37, 37, 37),
       ),
+      body: ListView(children: [
+        TV(tv: tv),
+        TopRated(topRated: topRatedMovies),
+        TrendingMovies(trending: trendingMovies),
+      ]),
     );
   }
 }
