@@ -16,7 +16,8 @@ A Flutter-based **Movie App** that fetches trending movies, top-rated movies, an
 
 | Demo Video | Home Screen  | Movie Details |
 |--------------|--------------|------------|
-| <video width="200" controls> <source src="https://github.com/Manvi1718/movie-application/assets/recording.mp4" type="video/mp4"> Your browser does not support the video tag. </video> | <img src="https://github.com/user-attachments/assets/61bd03f3-16f1-42e1-a350-50e796e820d7" width="200"> | <img src="https://github.com/user-attachments/assets/17a0f83f-6b8e-4af1-9fdc-d27e97102abb" width="200"> | 
+| <img src="assets/recording.gif" width="200"> | <img src="https://github.com/user-attachments/assets/61bd03f3-16f1-42e1-a350-50e796e820d7" width="200"> | <img src="https://github.com/user-attachments/assets/17a0f83f-6b8e-4af1-9fdc-d27e97102abb" width="200"> |
+
 
 
 ---
