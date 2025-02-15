@@ -44,6 +44,10 @@ class TopRated extends StatelessWidget {
                                 topRated[index]['poster_path'],
                             vote: topRated[index]['vote_average'].toString(),
                             launchOn: topRated[index]['release_date'],
+                            isAdult: topRated[index]['adult'],
+                            originalLanguage: topRated[index]
+                                ['original_language'],
+                            voteCount: topRated[index]['vote_count'].toString(),
                           );
                         },
                       ),

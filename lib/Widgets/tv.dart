@@ -44,6 +44,9 @@ class TV extends StatelessWidget {
                                 tv[index]['poster_path'],
                             vote: tv[index]['vote_average'].toString(),
                             launchOn: tv[index]['first_air_date'],
+                            isAdult: tv[index]['adult'],
+                            originalLanguage: tv[index]['original_language'],
+                            voteCount: tv[index]['vote_count'].toString(),
                           );
                         },
                       ),

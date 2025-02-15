@@ -44,6 +44,10 @@ class TrendingMovies extends StatelessWidget {
                                 trending[index]['poster_path'],
                             vote: trending[index]['vote_average'].toString(),
                             launchOn: trending[index]['release_date'],
+                            isAdult: trending[index]['adult'],
+                            originalLanguage: trending[index]
+                                ['original_language'],
+                            voteCount: trending[index]['vote_count'].toString(),
                           );
                         },
                       ),
